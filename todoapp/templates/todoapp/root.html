@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.centerText{
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-family:Georgia;
+}
+</style>
+</head>
+<body>
+
+{% include 'todoapp/components/navbar.html' %}
+{% include 'todoapp/components/footer.html' %}
+
+
+{% block content %}
+<h1 class="centerText">Root Page</h1>
+{% endblock %}
+
+
+</body>
+</html> 

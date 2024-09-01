@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+<style>
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  text-align:center;
+  color:rgb(251, 251, 251);
+
+}
+#f-color{
+  background-color:rgb(125, 45, 187);
+  color:rgb(219, 191, 238);
+  font-style: oblique;
+  font-size:large;
+  font-weight: bold;
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="main">
+  <h2><a href="{% url 'index' %}" style="text-decoration:none; 
+  color:rgb(61, 3, 105); font-size:50px; font-weight: bold; 
+  font-family:Courier New">ToDoApp</a></h2>
+  <footer id="f-color" class="footer py-3 text-center">
+    "Discipline is the soul of an army-George Washington"<br>
+    Time:{{ dt|time }}<br>
+    Date:{{ dt|date }}
+  </footer>
+
+</div>
+
+
+
+</body>
+</html> 
